@@ -14,3 +14,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+Cách chạy: mở terminal trỏ đúng vào thư mục fixappp
+nhấn lệnh: flutter run -d chrome để chạy web trên chrome
+chạy trên điện thoại ảo : gõ flutter run 
