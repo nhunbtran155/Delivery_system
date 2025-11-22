@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="Delivery App Web Version with FCM Notifications">
+
+  <meta name="theme-color" content="#565656">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Delivery App">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>Delivery System Web</title>
+  <base href="/">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- 🗺️ Google Maps JavaScript API -->
+
+
+  <script>
+    var serviceWorkerVersion = null;
+  </script>
+  <script src="flutter.js" defer></script>
+
+  <!-- ❌ Không nền, không splash -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent; /* hoặc #FFFFFF nếu muốn */
+      overflow: hidden;
+    }
+  </style>
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+</head>
+
+<body>
+<noscript>Please enable JavaScript to run this app.</noscript>
+
+<script>
+  // 🚀 Khởi chạy Flutter Web mà không splash tạm
+  window.addEventListener('load', function (ev) {
+    _flutter.loader.loadEntrypoint({
+      serviceWorker: { serviceWorkerVersion: serviceWorkerVersion },
+      onEntrypointLoaded: function (engineInitializer) {
+        engineInitializer.initializeEngine().then(function (appRunner) {
+          appRunner.runApp();
+        });
+      },
+    });
+  });
+</script>
+
+<!-- 🔥 Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-messaging-compat.js"></script>
+
+<script>
+  /* ✅ Firebase Project Config (sos-prj) */
+  const firebaseConfig = {
+    apiKey: "AIzaSyDt2Wryz_70sRQXaYvAObmd-RY0M445gFo",
+    authDomain: "sos-prj.firebaseapp.com",
+    projectId: "sos-prj",
+    storageBucket: "sos-prj.appspot.com",
+    messagingSenderId: "678872102873",
+    appId: "1:678872102873:web:1b2b9c21a4058a28adcbc8",
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const messaging = firebase.messaging();
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('/firebase-messaging-sw.js')
+      .then((registration) => {
+        console.log('✅ Service worker registered:', registration);
+
+        if (messaging.useServiceWorker) {
+          messaging.useServiceWorker(registration);
+        } else {
+          console.warn('⚠️ messaging.useServiceWorker không khả dụng (Web SDK mới)');
+        }
+
+
+
+        Notification.requestPermission().then((permission) => {
+          if (permission === 'granted') {
+            console.log('🔔 Notification permission granted.');
+            messaging
+              .getToken({ vapidKey })
+              .then((currentToken) => {
+                if (currentToken) {
+                  console.log('✅ FCM Web Token:', currentToken);
+                } else {
+                  console.warn('⚠️ Không thể lấy token FCM – chưa được cấp quyền.');
+                }
+              })
+              .catch((err) => {
+                console.error('❌ Lỗi khi lấy token FCM:', err);
+              });
+          } else {
+            console.warn('🚫 Notification permission denied.');
+          }
+        });
+      })
+      .catch((err) => {
+        console.error('❌ Service worker registration failed:', err);
+      });
+  }
+
+  // 🔄 Nhận thông báo foreground
+  messaging.onMessage((payload) => {
+    console.log('📩 [Foreground] Message received:', payload);
+    const notificationTitle = payload.notification?.title || 'Thông báo mới';
+    const notificationOptions = {
+      body: payload.notification?.body || '',
+      icon: '/icons/Icon-192.png',
+    };
+    new Notification(notificationTitle, notificationOptions);
+  });
+</script>
+</body>
+</html>

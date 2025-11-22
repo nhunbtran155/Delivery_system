@@ -1,0 +1,75 @@
+name: delivery_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 🎨 Giao diện & hiệu ứng
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  fl_chart: ^1.1.1
+  lottie: ^3.1.0
+
+  # 🔥 Firebase
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  cloud_firestore: ^5.6.12
+  firebase_database: ^11.0.0
+  firebase_messaging: ^15.0.0
+  firebase_storage: ^12.2.0
+  image_picker: ^1.1.1
+
+  # 🗺️ Định vị & bản đồ
+  google_maps_flutter: ^2.6.0
+  google_maps_flutter_web: ^0.5.14+2
+  geolocator: ^10.0.0
+  permission_handler: ^11.0.0
+  flutter_polyline_points: ^2.1.0  # ✅ DÙNG ĐỂ VẼ ĐƯỜNG ĐI GIỮA 2 ĐIỂM
+
+  # ⚙️ Hỗ trợ logic & trạng thái
+  provider: ^6.1.2
+  shared_preferences: ^2.3.2
+  http: ^1.1.1
+  simple_animations: ^5.2.0
+
+  # 🔔 Thông báo cục bộ (dùng cho FCM foreground)
+  flutter_local_notifications: ^17.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/imagesnhung/
+    - assets/imagesnhung/core/
+    - assets/imagesnhung/login/
+    - assets/icons/
+    - assets/launcher_icon/
+    - assets/map_styles/
+    - assets/native_splash/
+    - assets/orders_sample.json
+    - assets/fonts/Poppins-Regular.ttf
+    - assets/fonts/Poppins-Bold.ttf
+
+    # Các file cụ thể
+    - assets/imagesnhung/login/hi_hand.png
+    - assets/imagesnhung/login/login_background.png
+    - assets/imagesnhung/core/app_logo.png
+    - assets/imagesnhung/core/custom_splash.png
+    - assets/imagesnhung/core/custom_splash_animation.json
+    - assets/imagesnhung/core/loading.gif
+    - assets/imagesnhung/core/loading_animation.json
+    - assets/imagesnhung/core/no_internet.png

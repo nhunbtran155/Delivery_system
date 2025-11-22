@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- Nền xám trùng với splash Flutter -->
+        <color android:color="#565656" />
+    </item>
+</layer-list>

@@ -1,0 +1,195 @@
+{
+  "project_info": {
+    "project_number": "678872102873",
+    "firebase_url": "https://sos-prj-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "sos-prj",
+    "storage_bucket": "sos-prj.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678872102873:android:be124789245b2d89adcbc8",
+        "android_client_info": {
+          "package_name": "com.example.delivery_app.delivery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678872102873-d8ragf5hk2qs8p4b777km8iadhv01uk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvcielxcIwlol3GWMgWx1ml5yzxG1IVnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678872102873-5evrd9ohs7n1hr2eksccapqbtqpqk8m1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678872102873-0il6e9pue8cfmjqu6jd2b2ujpqrn5670.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.deliveryapp.deliveryApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678872102873:android:6e4d83216a8e920dadcbc8",
+        "android_client_info": {
+          "package_name": "com.example.shipper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678872102873-8074nsavk0iabm44bbuqt9hkc3pk9kbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shipper",
+            "certificate_hash": "348da4198fa5065d0cf5943dd24f059d5ad3d37c"
+          }
+        },
+        {
+          "client_id": "678872102873-gqak46rqvs9lgq1ci1qudas9rbhtmce1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shipper",
+            "certificate_hash": "610e33e857aca8412567ca9720db0225d04f0d0f"
+          }
+        },
+        {
+          "client_id": "678872102873-d8ragf5hk2qs8p4b777km8iadhv01uk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvcielxcIwlol3GWMgWx1ml5yzxG1IVnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678872102873-5evrd9ohs7n1hr2eksccapqbtqpqk8m1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678872102873-0il6e9pue8cfmjqu6jd2b2ujpqrn5670.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.deliveryapp.deliveryApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678872102873:android:82debdc00dc9ee5cadcbc8",
+        "android_client_info": {
+          "package_name": "com.example.smartdelivery_fixed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678872102873-3eqn0ql9tpe0ab2tnrf632sgu2k69mk8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartdelivery_fixed",
+            "certificate_hash": "610e33e857aca8412567ca9720db0225d04f0d0f"
+          }
+        },
+        {
+          "client_id": "678872102873-k5f6h9g08r2snipcfee9v7rc5s0a02jc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartdelivery_fixed",
+            "certificate_hash": "093571b6060744d79d3f5083b8b78853f43a3d2c"
+          }
+        },
+        {
+          "client_id": "678872102873-d8ragf5hk2qs8p4b777km8iadhv01uk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvcielxcIwlol3GWMgWx1ml5yzxG1IVnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678872102873-5evrd9ohs7n1hr2eksccapqbtqpqk8m1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678872102873-0il6e9pue8cfmjqu6jd2b2ujpqrn5670.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.deliveryapp.deliveryApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678872102873:android:1d06db133086b31cadcbc8",
+        "android_client_info": {
+          "package_name": "com.sos.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678872102873-vk75t95p63os3335u8p2ni8umqqpurnl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sos.app",
+            "certificate_hash": "610e33e857aca8412567ca9720db0225d04f0d0f"
+          }
+        },
+        {
+          "client_id": "678872102873-d8ragf5hk2qs8p4b777km8iadhv01uk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvcielxcIwlol3GWMgWx1ml5yzxG1IVnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678872102873-5evrd9ohs7n1hr2eksccapqbtqpqk8m1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "678872102873-0il6e9pue8cfmjqu6jd2b2ujpqrn5670.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.deliveryapp.deliveryApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

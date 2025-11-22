@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["http://localhost:5000", "http://localhost:8080", "http://localhost:3000", "http://localhost:49152", "http://localhost:64318", "http://127.0.0.1:5000", "https://sos-prj.web.app", "https://sos-prj.firebaseapp.com","http://localhost:49381"],
+    "method": ["GET", "POST", "PUT", "DELETE", "HEAD"],
+    "maxAgeSeconds": 3600,
+    "responseHeader": ["Content-Type", "x-goog-meta-foo", "x-goog-acl", "x-goog-meta-owner", "Authorization"]
+  }
+]
