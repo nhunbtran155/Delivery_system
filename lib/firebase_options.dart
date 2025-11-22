@@ -47,7 +47,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDt2Wryz_70sRQXaYvAObmd-RY0M445gFo',
+    apiKey: '',
     appId: '1:678872102873:web:1b2b9c21a4058a28adcbc8',
     messagingSenderId: '678872102873',
     projectId: 'sos-prj',
@@ -58,7 +58,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCvcielxcIwlol3GWMgWx1ml5yzxG1IVnk',
+    apiKey: '',
     appId: '1:678872102873:android:be124789245b2d89adcbc8',
     messagingSenderId: '678872102873',
     projectId: 'sos-prj',
@@ -66,8 +66,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAaJiugDwpANZXLV0ItltaZ6Wzwdeg3IK4',
-    appId: '1:678872102873:ios:bb89d06e37a70956adcbc8',
+    apiKey: '',
+    appId: '',
     messagingSenderId: '678872102873',
     projectId: 'sos-prj',
     storageBucket: 'sos-prj.appspot.app',
